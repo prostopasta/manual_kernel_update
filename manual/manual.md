@@ -18,6 +18,17 @@
 ---
 # **Установка ПО**
 
+### **Virtualbox**
+Ставим из официальных репозиториев командой:
+
+```
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y virualbox
+```
+
+После успешного окончания будет установлен Packer.
+
+
 ### **Vagrant**
 Переходим на https://www.vagrantup.com/downloads.html выбираем соответствующую версию. В данном случае Debian 64-bit и версия 2.2.6. Копируем ссылку и в консоли выполняем:
 
@@ -29,11 +40,11 @@ sudo dpkg -i vagrant_2.2.6_x86_64.deb
 После успешного окончания будет установлен Vagrant.
 
 ### **Packer**
-Переходим на https://www.packer.io/downloads.html выбираем соответствующую версию. В данном случае Linux 64-bit и версия 1.4.4. Копируем ссылку и в консоли выполняем:
+Переходим на https://www.packer.io/downloads.html выбираем соответствующую версию. В данном случае Linux 64-bit и версия 1.4.5. Копируем ссылку и в консоли выполняем:
 
 ```
-curl https://releases.hashicorp.com/packer/1.4.4/packer_1.4.4_linux_amd64.zip | \
-sudo gzip -d > /usr/local/bin/packer && \
+curl -O https://releases.hashicorp.com/packer/1.4.4/packer_1.4.5_linux_amd64.zip | \
+sudo gzip -d packer_1.4.5_linux_amd64.zip > /usr/local/bin/packer && \
 sudo chmod +x /usr/local/bin/packer
 ```
 
