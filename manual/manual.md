@@ -43,7 +43,7 @@ sudo dpkg -i vagrant_2.2.6_x86_64.deb
 Переходим на https://www.packer.io/downloads.html выбираем соответствующую версию. В данном случае Linux 64-bit и версия 1.4.5. Копируем ссылку и в консоли выполняем:
 
 ```
-curl -O https://releases.hashicorp.com/packer/1.4.4/packer_1.4.5_linux_amd64.zip | \
+curl -O https://releases.hashicorp.com/packer/1.4.5/packer_1.4.5_linux_amd64.zip | \
 sudo gzip -d packer_1.4.5_linux_amd64.zip > /usr/local/bin/packer && \
 sudo chmod +x /usr/local/bin/packer
 ```
